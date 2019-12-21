@@ -1,7 +1,5 @@
 package com.bridgelabs.FunctionalProgram;
 
-
-
 public class DaysOfWeek {
 	
 	//To Print the Day of the date

@@ -16,7 +16,7 @@ public class VendingMachine {
 		if(Money==0)
 			return -1;
 		
-		else
+		if(Money>0)
 		{
 			if(Money>=notes[i])
 			{
@@ -31,7 +31,7 @@ public class VendingMachine {
 		
 		return calculate(Money,notes);
 		}
-		
+		return -1;
 	}
 	
 	public static void main(String[] args)

@@ -37,8 +37,7 @@ public class TicTacToe {
 	}
 
 	// to Print the board status
-	
-   public void printBoardStatus() 
+	public void printBoardStatus() 
 	{
 		String strBoard = "";
 		for (int rows = 0; rows < ROWS; rows++) 
@@ -107,7 +106,7 @@ public class TicTacToe {
 	}
 	
 	// to set player inputs to board
-		public void setPlay(int rows, int colms, String input) 
+	public void setPlay(int rows, int colms, String input) 
 		{
 			if (this.board[rows][colms].matches(NOOUTPUT))
 				this.board[rows][colms] = input;
