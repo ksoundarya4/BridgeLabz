@@ -1,10 +1,8 @@
 package com.bridgelabs.FunctionalProgram;
 
-import com.bridgelabs.util.utilclass;
-
 public class FlipCoin {
 	
-	public static double ToFlipCoin()
+	public static double toFlipCoin()
 	{
 		System.out.println("Enter number of times to Flip a Coin");
 		int N = utilclass.InputInteger();
@@ -26,7 +24,7 @@ public class FlipCoin {
 	
 	public static void main(String[] args)
 	{
-		System.out.println(FlipCoin.ToFlipCoin());
+		System.out.println(FlipCoin.toFlipCoin());
 	}
 	
 

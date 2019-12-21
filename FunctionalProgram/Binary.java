@@ -1,8 +1,7 @@
 package com.bridgelabs.FunctionalProgram;
 
-import com.bridgelabs.util.utilclass;
 
-public class Binary {
+  public class Binary {
 
 	public static void main(String[] args) 
 	{
@@ -18,7 +17,7 @@ public class Binary {
 	}
 	
 	//To swap nibbles in number
-	int swapNibble = Swapnibble(num);
+	int swapNibble = swapNibble(num);
 	System.out.println();
 	System.out.println("Number after swaping nibbles = "+swapNibble);
 	
@@ -26,13 +25,14 @@ public class Binary {
 	//To check if swapped number is a power of 2
 	if(isPowerOf2(swapNibble))
 	System.out.println("The swapped number "+swapNibble+ " is power of 2");
-	else
+
+	if(!isPowerOf2(swapNibble))
 		System.out.println("The swapped number "+swapNibble+ " is  not power of 2");
 }
 	
 	
 	//Method to swap nibbles
-	public static int Swapnibble(int num)
+	public static int swapNibble(int num)
 	{
 		return ((num & 0x0f) << 4) | ((num & 0xf0) >> 4);
 	

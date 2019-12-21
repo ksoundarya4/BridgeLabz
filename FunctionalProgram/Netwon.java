@@ -1,7 +1,5 @@
 package com.bridgelabs.FunctionalProgram;
 
-import com.bridgelabs.util.utilclass;
-
 public class Netwon {
 
 	public static void main(String[] args) {

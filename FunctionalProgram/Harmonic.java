@@ -1,11 +1,10 @@
 package com.bridgelabs.FunctionalProgram;
 
-import com.bridgelabs.util.utilclass;
 
 public class Harmonic {
 	
 	
-	public static void PrintHarmonics(int N)
+	public static void printHarmonics(int N)
 	{
 		if(N!=0)
 		{
@@ -26,6 +25,6 @@ public class Harmonic {
 	{
 		System.out.println("Enter an integer to check harmonics");
 		int num = utilclass.InputInteger();
-		PrintHarmonics(num);
+		printHarmonics(num);
 	}
 }

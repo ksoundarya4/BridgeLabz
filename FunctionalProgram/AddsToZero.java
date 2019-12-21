@@ -3,11 +3,9 @@ package com.bridgelabs.FunctionalProgram;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.bridgelabs.util.utilclass;
-
 public class AddsToZero {
 	
-	public static int[] ReadInteger()
+	public static int[] readInteger()
 	{
 		System.out.println("Enter number of intergers to be read");
 		int N = utilclass.InputInteger();
@@ -22,7 +20,7 @@ public class AddsToZero {
 	    return arr;
 	}
 	
-	public static void Triplets(int[] nums)
+	public static void triplets(int[] nums)
 	{
 		int count = 0;
 		List<String> l = new ArrayList<String>();
@@ -49,8 +47,8 @@ public class AddsToZero {
 	public static void main(String[] args)
 	{
 		
-		int[] a = ReadInteger();
-			Triplets(a);
+		int[] a = readInteger();
+			triplets(a);
 			
 	}
 }

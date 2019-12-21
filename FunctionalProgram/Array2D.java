@@ -1,10 +1,10 @@
 package com.bridgelabs.FunctionalProgram;
 
-import com.bridgelabs.util.utilclass;
+
 
 public class Array2D {
 	
-	public static void Integer2DArray()
+	public static void integer2dArray()
 	{
 		System.out.println("Enter number of rows");
 		int rows = utilclass.InputInteger();
@@ -91,7 +91,7 @@ public class Array2D {
 	public static void SelectArray(String s)
 	{
 		if(s.equals("InterArray"))
-			Integer2DArray();
+			integer2dArray();
 			
 			
 			if(s.equals("DoubleArray"))		

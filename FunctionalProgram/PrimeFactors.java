@@ -1,10 +1,8 @@
 package com.bridgelabs.FunctionalProgram;
 
-import com.bridgelabs.util.utilclass;
-
 public class PrimeFactors {
 	
-	public static void PrintPrimeFactor(int N)
+	public static void printPrimeFactor(int N)
 	{
 	
 		
@@ -33,7 +31,7 @@ public class PrimeFactors {
 		{
 			System.out.println("Number to find prime factors");
 			int N = utilclass.InputInteger();
-			PrintPrimeFactor(N);
+			printPrimeFactor(N);
 		}
 
 }

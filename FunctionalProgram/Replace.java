@@ -1,10 +1,8 @@
 package com.bridgelabs.FunctionalProgram;
 
-import com.bridgelabs.util.utilclass;
-
 public class Replace {
 	
-	public static void ToReplace(String name)
+	public static void toReplace(String name)
 	{
 		String  s1 = "Hello <<UserName>> ,How are you ?";
 		
@@ -20,7 +18,7 @@ public class Replace {
 		System.out.println("Enter your name");
 		String name = utilclass.InputString();
 		
-		ToReplace(name);
+		toReplace(name);
 	}
 }
 

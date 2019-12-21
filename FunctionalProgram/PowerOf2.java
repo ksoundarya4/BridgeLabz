@@ -1,12 +1,8 @@
 package com.bridgelabs.FunctionalProgram;
 
-import com.bridgelabs.util.utilclass;
-
 public class PowerOf2 {
 	
-
-
-	public static void PrintPowerOf2(int N)
+    public static void printPowerOf2(int N)
 
 	{
 		int[] power = new int[N];
@@ -25,6 +21,6 @@ public class PowerOf2 {
 	{
 		System.out.println("Enter an integer to printpowerof2");
 		int num = utilclass.InputInteger();
-		PrintPowerOf2(num);
+		printPowerOf2(num);
 	}
 }

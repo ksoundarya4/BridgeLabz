@@ -1,7 +1,5 @@
 package com.bridgelabs.FunctionalProgram;
 
-import com.bridgelabs.util.utilclass;
-
 public class VendingMachine {
 
 	//To Determine the available notes in Vending Machine
@@ -12,7 +10,7 @@ public class VendingMachine {
 	//To check total number of notes returned
 	private static int TotalNotes = 0;
 	
-	public static int Calculate(int Money , int[] notes)
+	public static int calculate(int Money , int[] notes)
 	{
 		int reminder = 0;
 		if(Money==0)
@@ -31,7 +29,7 @@ public class VendingMachine {
 			}
 			i++;
 		
-		return Calculate(Money,notes);
+		return calculate(Money,notes);
 		}
 		
 	}
@@ -42,7 +40,7 @@ public class VendingMachine {
 		int Money = utilclass.InputInteger();
 		
 		
-		VendingMachine.Calculate(Money, notes);
+		VendingMachine.calculate(Money, notes);
 		System.out.println("Total number of notes returned = "+TotalNotes);
 		
 	}
