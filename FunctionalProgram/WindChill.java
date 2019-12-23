@@ -26,8 +26,8 @@ public class WindChill {
 	
 	/**
 	 * To accept command-line arguments
-	 * @param{String} args[0] - input  temperature in degree fahrenheit
-	 * @param{String} args[1] - input  velocity in miles per second
+	 * @param{String} args[0] - input  temperature in degree fahrenheit more than 50
+	 * @param{String} args[1] - input  velocity in miles per second less than 120
 	 */
 	public static void main(String[] args)
 	{
