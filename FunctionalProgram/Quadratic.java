@@ -1,7 +1,19 @@
+/************
+ * Functional Program
+ * purpose : To find roots of Quadratic equation [a*x*x + b*x + c]
+ * @discription
+ * @file Quadratic.java
+ * @author soundarya<ksoundarya>
+ * @version 1.0
+ * @since 10/12/2019
+ */
 package com.bridgelabs.FunctionalProgram;
-
-public class Quadratic 
-{
+public class Quadratic {
+	
+	/**
+	 * main method to print roots
+	 * @param args - doesnot accept any input
+	 */
 	public static void main(String[] args)
 	{
 		System.out.println("Enter three inter values to find quadratic roots");
