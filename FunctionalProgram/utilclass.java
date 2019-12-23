@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class utilclass {
 	
+	
 	//To get String input from keyboard
 	public static String InputString()
 	{
@@ -206,5 +207,20 @@ public class utilclass {
 					ioe.printStackTrace();
 				}	
 			}
+		}
+		
+		public static int[] readIntegerArray()
+		{
+			System.out.println("Enter number of intergers to be read");
+			int N = utilclass.InputInteger();
+			int[] arr = new int[N];
+			
+		    for(int i = 0; i<N; i++)
+		    {
+		    	System.out.println("Enter "+(i+1)+"th integer");
+			arr[i]=utilclass.InputInteger();
+		    }
+		    
+		    return arr;
 		}
 }

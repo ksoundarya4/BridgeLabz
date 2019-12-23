@@ -2,7 +2,7 @@ package com.bridgelabs.FunctionalProgram;
 
 
 
-public class Array2D {
+public class Array2D<T> {
 	
 	public static void integer2dArray()
 	{
@@ -90,7 +90,7 @@ public class Array2D {
 	
 	public static void SelectArray(String s)
 	{
-		if(s.equals("InterArray"))
+		if(s.equals("IntegerArray"))
 			integer2dArray();
 			
 			
@@ -101,6 +101,7 @@ public class Array2D {
 				boolean2DArray();
 	}
 	
+
 	public static void main(String[] args)
 	{
 		

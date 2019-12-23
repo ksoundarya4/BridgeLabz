@@ -22,7 +22,7 @@ public class Gambler {
 				bets++;
 				if(Math.random()<0.5)
 					cash++;
-				else
+				if(Math.random()>0.5)
 					cash--;
 			}
 			if(cash==goal)

@@ -1,11 +1,24 @@
+/************
+ * Basic Core Programs
+ * purpose : Prints table of powers of 2 
+ * that are less than or equal to 2^N
+ * @discription
+ * @file PowerOf2
+ * @author soundarya<ksoundarya4>
+ * @version 1.0
+ * @since 09/12/2019
+ */
 package com.bridgelabs.FunctionalProgram;
 
 public class PowerOf2 {
 	
-    public static void printPowerOf2(int N)
-
-	{
-		int[] power = new int[N];
+	/**
+	 * To print power of 2 until 2^N
+	 * @param {int}N - print until 2^N
+	 */
+    public static void printPowerOf2(int N) {
+		
+    	int[] power = new int[N];
 		power[0] = 1;
 		for(int i = 1; i<N; i++)
 		{
@@ -19,8 +32,6 @@ public class PowerOf2 {
 
 	public static void main(String[] args)
 	{
-		System.out.println("Enter an integer to printpowerof2");
-		int num = utilclass.InputInteger();
-		printPowerOf2(num);
+		printPowerOf2(Integer.parseInt(args[0])); //Takes command line argument N
 	}
 }
