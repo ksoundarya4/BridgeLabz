@@ -1,7 +1,24 @@
+/*****************
+ * Logical Programs
+ * purpose :  Simulates a gambler who start with $stake
+ *            and place fair $1 bets until he/she 
+ *            goes broke (i.e. has no money) or reach $goal.
+ * @discription
+ * @file Gambler.java
+ * @author soundarya<ksoundarya4>
+ * @version 1.0
+ * @since 11/12/2019 
+ */
 package com.bridgelabs.FunctionalProgram;
-
 public class Gambler {
 	
+	/**
+	 * To calculate number of wins and number of bets
+	 * @param{String} args[0] - input stack (int)
+	 * @param{String} args[1] - input goal (int)
+	 * @param{String} args[2] - input number of trails
+	 * Print number of wins , percentage of win , Average of bets
+	 */
 	public static void main(String[] args)
 	{
 		//Accept input of $stack,$goal and number of trails via command line arguments.
@@ -10,7 +27,6 @@ public class Gambler {
 		int trails = Integer.parseInt(args[2]);
 		
 		//Initialize number of wins and bets to Zero
-		
 		int wins = 0;
 		int bets = 0;
 		
