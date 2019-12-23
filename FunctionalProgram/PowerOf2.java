@@ -13,7 +13,7 @@ package com.bridgelabs.FunctionalProgram;
 public class PowerOf2 {
 	
 	/**
-	 * To print power of 2 until 2^N
+	 * To print power of 2 until 2 to the power of N
 	 * @param {int}N - print until 2^N
 	 */
     public static void printPowerOf2(int N) {
