@@ -1,7 +1,22 @@
+/**************************
+ * Functional Program
+ * purpose : Prints Euclidean distance from point (x,y) to origin (0,0)
+ * @discription
+ * @file Distance.java
+ * @author soundarya<ksoundarya4>
+ * @version 1.0
+ * @since 10/12/2019
+ */
+
 package com.bridgelabs.FunctionalProgram;
 
 public class Distance {
 	
+	/**
+	 * To print Euclidean distance
+	 * @param{String}args - Accept command-line arguments
+	 * print the euclidean distance
+	 */
 	public static void main(String[] args)
 	{
 		int x = 0;
