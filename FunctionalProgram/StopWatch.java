@@ -42,7 +42,7 @@ public class StopWatch {
 	 * @param{long}elapsed - calculates time elapsed
 	 * @return - returns time elapsed
 	 */
-	public long GetElapsed()
+	public long getElapsed()
 	{
 		
 	long elapsed = 0;
@@ -64,7 +64,7 @@ public class StopWatch {
 	  Thread.sleep(1450);
 	  
 	 s.stop();
-	 System.out.println("Time elapsed = "+(1.0*s.GetElapsed())/1000+"s");
+	 System.out.println("Time elapsed = "+(1.0*s.getElapsed())/1000+"s");
  }
 	 catch(Exception e)
 	 {
