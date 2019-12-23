@@ -1,7 +1,7 @@
 /************
  * Basic Core Programs
  * purpose : Prints table of powers of 2 
- * that are less than or equal to 2^N
+ * that are less than or equal to 2 to the power of N
  * @discription
  * @file PowerOf2
  * @author soundarya<ksoundarya4>
