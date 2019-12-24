@@ -1,7 +1,21 @@
+/*****************
+ * JUNIT Program
+ * purpose : to calculate the monthly payments
+ * @discription
+ * @file MontlyPayment.java
+ * @author soundarya<ksoundarya4>
+ * @version 1.0
+ * @since 12/12/2019
+ */
 package com.bridgelabs.FunctionalProgram;
-
 public class MontlyPayment {
-
+    /**
+     * To find montly payment
+     * @param{String}args[0] - Principle in integer
+     * @param{String}args[1] - Number of year in integer
+     * @param{String}args[2] - Rate in integer
+     * prints montly payment for above parameters.
+     */
 	public static void main(String[] args) {
 		int Principle = 0;
 		int Year = 0;
