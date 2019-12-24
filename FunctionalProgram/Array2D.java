@@ -1,112 +1,109 @@
+
 package com.bridgelabs.FunctionalProgram;
-
-
-
 public class Array2D<T> {
-	
-	public static void integer2dArray()
-	{
+
+	public static int getRows() {
+
 		System.out.println("Enter number of rows");
 		int rows = utilclass.InputInteger();
-		
+		return rows;
+	}
+
+	public static int getColms() {
+
 		System.out.println("Enter number of coloums");
 		int colms = utilclass.InputInteger();
-		
-		int[][] arr2D = new int[rows][colms];
-		
-		for(int i = 0; i<rows ; i++)
-		{
-			for(int j = 0; j<colms; j++)
-			{
-				System.out.println("Enter "+i+"th row "+j+"th coloum values");
-			    arr2D[i][j] = utilclass.InputInteger();
+		return colms;
+	}
+
+	private static Integer[][] readInteger2dArray(int rows, int colms, Integer[][] arr2D) {
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < colms; j++) {
+				System.out.println("Enter " + i + "th row " + j + "th coloum values");
+				arr2D[i][j] = utilclass.InputInteger();
 			}
 		}
-		
-		for(int i = 0 ;i<rows; i++)
-		{
-			for(int j = 0; j<colms; j++)
-				System.out.print(arr2D[i][j]+" ");
-			
+		return arr2D;
+	}
+
+	public static Double[][] readDouble2dArray(int rows, int colms, Double[][] arr2D) {
+
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < colms; j++) {
+				System.out.println("Enter " + i + "th row " + j + "th coloum values");
+				arr2D[i][j] = utilclass.InputDouble();
+			}
+		}
+		return arr2D;
+	}
+
+	private static Boolean[][] readBoolean2dArray(int rows, int colms, Boolean[][] arr2D) {
+
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < colms; j++) {
+				System.out.println("Enter " + i + "th row " + j + "th coloum values");
+				arr2D[i][j] = utilclass.InputBoolean();
+			}
+		}
+		return arr2D;
+	}
+
+	public static <T> void print2dArray(int rows, int colm, T[][] arr) {
+
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < colm; j++)
+				System.out.print(arr[i][j] + " ");
 			System.out.println();
 		}
 	}
 
-	public static void double2DArray()
-	{
-		System.out.println("Enter number of rows");
-		int rows = utilclass.InputInteger();
-		
-		System.out.println("Enter number of coloums");
-		int colms = utilclass.InputInteger();
-		
-		double[][] arr2D = new double[rows][colms];
-		
-		for(int i = 0; i<rows ; i++)
-		{
-			for(int j = 0; j<colms; j++)
-			{
-				System.out.println("Enter "+i+"th row "+j+"th coloum values");
-			    arr2D[i][j] = utilclass.InputDouble();
-			}
-		}
-		
-		for(int i = 0 ;i<rows; i++)
-		{
-			for(int j = 0; j<colms; j++)
-				System.out.print(arr2D[i][j]+" ");
-			
-			System.out.println();
-		}
-	}
-	
-	public static void boolean2DArray()
-	{
-		System.out.println("Enter number of rows");
-		int rows = utilclass.InputInteger();
-		
-		System.out.println("Enter number of coloums");
-		int colms = utilclass.InputInteger();
-		
-		boolean[][] arr2D = new boolean[rows][colms];
-		
-		for(int i = 0; i<rows ; i++)
-		{
-			for(int j = 0; j<colms; j++)
-			{
-				System.out.println("Enter "+i+"th row "+j+"th coloum values");
-			    arr2D[i][j] = utilclass.InputBoolean();
-			}
-		}
-		
-		for(int i = 0 ;i<rows; i++)
-		{
-			for(int j = 0; j<colms; j++)
-				System.out.print(arr2D[i][j]+" ");
-			
-			System.out.println();
-		}
-	}
-	
-	public static void SelectArray(String s)
-	{
-		if(s.equals("IntegerArray"))
-			integer2dArray();
-			
-			
-			if(s.equals("DoubleArray"))		
-				double2DArray();
-			
-			if(s.equals("BooleanArray"))
-				boolean2DArray();
-	}
-	
+	public static void integer2dArray(int rows, int colms) {
 
-	public static void main(String[] args)
-	{
+		Integer[][] arr2D = new Integer[rows][colms];
+
+		arr2D = readInteger2dArray(rows, colms, arr2D);
+
+		print2dArray(rows, colms, arr2D);
+	}
+
+	public static void double2DArray(int rows, int colms) {
+
+		Double[][] arr2D = new Double[rows][colms];
+
+		arr2D = readDouble2dArray(rows, colms, arr2D);
+
+		print2dArray(rows, colms, arr2D);
+
+	}
+
+	public static void boolean2DArray(int rows, int colms) {
+
+		Boolean[][] arr2D = new Boolean[rows][colms];
+
+		arr2D = readBoolean2dArray(rows, colms, arr2D);
+
+		print2dArray(rows, colms, arr2D);
+
+	}
+
+	public static void SelectArray(String s, int rows, int colms) {
 		
-		System.out.println("Enter which array to to use: InterArray,DoubleArray or BooleanArray");
+		if (s.equals("IntegerArray"))
+			integer2dArray(rows, colms);
+
+		if (s.equals("DoubleArray"))
+			double2DArray(rows, colms);
+
+		if (s.equals("BooleanArray"))
+			boolean2DArray(rows, colms);
+	}
+
+	public static void main(String[] args) {
+
+		System.out.println("Enter which array to to use");
 		String s = utilclass.InputString();
-		SelectArray(s);
+		int rows = getRows();
+		int colms = getColms();
+		SelectArray(s, rows, colms);
 	}
 }
