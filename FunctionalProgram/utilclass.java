@@ -14,7 +14,19 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class utilclass {
+public class utilclass<T> {
+	
+	/**
+	 * Generic method to accept input from keyboard
+	 * @return{T} - input from value.
+	 */
+	public static<T> T input()
+	{
+		Scanner sc1 = new Scanner(System.in);
+		T input = (T)sc1.next();
+		return input;
+	}
+	
 	/**
 	 * To accept String input from Keyboard
 	 * @return{String} inputed String
