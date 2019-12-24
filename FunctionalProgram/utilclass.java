@@ -1,5 +1,12 @@
-package com.bridgelabs.FunctionalProgram;
+/********************
+ * UtilClass
+ * purpose : To code repetating methods
+ * @discription
+ * @file utilclass.java
+ * @author soundarya<ksoundarya4>
+ */
 
+package com.bridgelabs.FunctionalProgram;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -8,9 +15,10 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class utilclass {
-	
-	
-	//To get String input from keyboard
+	/**
+	 * To accept String input from Keyboard
+	 * @return{String} inputed String
+	 */
 	public static String InputString()
 	{
 		Scanner sc1 = new Scanner(System.in);
@@ -19,7 +27,10 @@ public class utilclass {
 		
 	}
 	
-	//To get Integer type input from Keyboard
+	/**
+	 * To accept integer input from Keyboard
+	 * @return{int} inputed number
+	 */
 	public static int InputInteger()
 	{
 		
@@ -28,7 +39,10 @@ public class utilclass {
 		 return i;
 		}
 	
-	//To get Double type input from Keyboard
+	/**
+	 * To accept Number input from Keyboard
+	 * @return{double} inputed Number
+	 */
 	public static double InputDouble()
 	{
 		Scanner sc1 = new Scanner(System.in);
@@ -36,7 +50,10 @@ public class utilclass {
 		return d;
 		}
 	
-	//To get boolean input from keyboard
+	/**
+	 * To accept Boolean input from Keyboard
+	 * @return{boolean} inputed true/false
+	 */
 	public static boolean InputBoolean()
 	{
 		Scanner sc1 = new Scanner(System.in);
@@ -44,7 +61,11 @@ public class utilclass {
 		return b;
 	}
 	
-	//To get number of digits in an Integer
+	/**
+	 * To calculate number of digits in a Number
+	 * @param{int}num - input number to find number of digits
+	 * @return{int} count of digits in a number
+	 */
 	public static int NumberOfDigits(int num)
 	 {
 		int count = 0;
@@ -56,7 +77,11 @@ public class utilclass {
 		return count;
 	 }
 	
-	//To verify a number is Prime or not
+	/**
+	 * To check whether the number is prime
+	 * @param{int}num - input integer to check for prime
+	 * @return{boolean} true if number is prime
+	 */
 	public static boolean isPrime(int num)
 	{
 		if(num==0 || num ==1)
@@ -76,7 +101,13 @@ public class utilclass {
 		return true;
 	}
 
-	//To find day of the date
+	/**
+	 * To find the day of the week that date falls on.
+	 * @param{int}year -Input year
+	 * @param{int}month -Input month
+	 * @param{int}date - Input date
+	 * @return{int} 0 for Sunday, 1 for Monday, 2 for Tuesday, and so forth.
+	 */
 	public static int Day(int year, int month ,int date)
 	{
 		 year = year - (14-month)/12;
@@ -87,7 +118,13 @@ public class utilclass {
 		
 	}
 	
-	//To convert Temperature from Celsius to Fahrenheit and visaversa
+	/**
+	 * To convert Temperature from Celsius to Fahrenheit and visaversa
+	 * @param{float}temp - Input temperature
+	 * @param{int}ch - 1 for celcius to fahrenheit
+	 * ch -2 for fahrenheit to celcius
+	 * Prints the converted temperature
+	 */
 	public static void TempConversion(float temp,int ch)
 	{
 		switch(ch)
@@ -102,9 +139,15 @@ public class utilclass {
 		}
 	}
 
-	//To calculate monthlyPayment
-	public static double MontlyPayment(int P , int Y , int R)
-	{
+	/**
+	 * To calculate monthlyPayment
+	 * @param P - Principle in integer
+	 * @param Y - Number of year in integer
+	 * @param R - Rate in integer
+	 * @return{double} Monthly Payment
+	 */
+	public static double MontlyPayment(int P , int Y , int R) {
+		
 		int n = 12*Y;
 		double r = 1.0*R/(12*100);
 		
@@ -113,10 +156,13 @@ public class utilclass {
 		return payment;
 	}
 	
-	//To claculate Square root using Newtons Method
-	
-	public static double sqrt(int num)
-	{
+	/**
+	 * To calculate Square root using Newton's Method
+	 * @param{int}num - Input number to find its square root
+	 * @return{double} square root value of the number
+	 */
+	public static double sqrt(int num) {
+		
 		double t = num;
 		double epsilon = 1e-15;
 		
@@ -128,7 +174,11 @@ public class utilclass {
 		return t;
 		}
 	
-	//To Convert integer to binary form(base 2)
+	/**
+	 * To Convert integer to binary form(base 2)
+	 * @param{int}num - Decimal input
+	 * @return{int[]} integer array of binary
+	 */
 	public static int[] toBinary(int num)
 	{
 		
@@ -141,19 +191,32 @@ public class utilclass {
 			num = num/2;
 			i++;
 		}
-		//Swapping elements in an array
-		for(int j=0; j< (arr.length-1)/2 ; j++)
-		{
-			
-			arr[j] = arr[j] ^ arr[arr.length-1-j];
-			arr[arr.length-1-j] = arr[j] ^ arr[arr.length-1-j];
-			arr[j] = arr[j] ^ arr[arr.length-1-j];
-		}
 		
-	return arr;	
+		return utilclass.swap(arr);	
 	}
 	
-	//To check for palindrome
+	/**
+	 * Swapping elements in an array
+	 * @param{int[]}arr - Integer array to swap elements
+	 * @return{int[]} swapped array
+	 */
+	 public static int[] swap(int[] arr)
+	 {
+			for(int j=0; j< (arr.length-1)/2 ; j++)
+			{
+				
+				arr[j] = arr[j] ^ arr[arr.length-1-j];
+				arr[arr.length-1-j] = arr[j] ^ arr[arr.length-1-j];
+				arr[j] = arr[j] ^ arr[arr.length-1-j];
+			}
+	return arr;
+	 }
+	 
+	/**
+	 * To check for palindrome
+	 * @param{String}s - input a word to check for palindrome
+	 * @return{boolean} true if a word is palindrome
+	 */
 	public static boolean isPalindrome(String s)
 	{
 		StringBuilder sb = new StringBuilder(s);
@@ -165,16 +228,22 @@ public class utilclass {
 		return false;
 	}
 	
-	//format date object in this format 01/12/2016 
+	/**
+	 * format date object in this format 01/12/2016
+	 * @param{Date}date - accepts a date
+	 * @return{String} formatted date 
+	 */
 		public static String getFormatedDate(Date date)
 		{
 			SimpleDateFormat sdf=new SimpleDateFormat("dd/mm/yyyy");
 			return sdf.format(date);
 		}
 		
-		
-		//
-		//Take file name as input and return string of file text
+		/**
+		 * Read File 
+		 * @param{String}fileName - path of file
+		 * @return{String} content of file in String format
+		 */
 		public static String getFileText(String fileName)
 		{
 			BufferedReader br = null;
@@ -209,6 +278,10 @@ public class utilclass {
 			}
 		}
 		
+		/**
+		 * To read IntegerArray from keyboard
+		 * @return{int[]} integer array
+		 */
 		public static int[] readIntegerArray()
 		{
 			System.out.println("Enter number of intergers to be read");
