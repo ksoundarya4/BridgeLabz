@@ -1,10 +1,23 @@
+/*****************
+ * JUNIT program
+ * purpose : prints the day of the week that date falls on
+ * @discription
+ * @file DaysOfWeek.java
+ * @author soundarya<ksoundarya4>
+ * @version 1.0
+ * @since 11/12/2019
+ */
 package com.bridgelabs.FunctionalProgram;
-
 public class DaysOfWeek {
-	
-	//To Print the Day of the date
-	public static  String PrintDay(int year,int month,int date)
-	{
+	/**
+	 * To find out day
+	 * @param{int}year - Enter year
+	 * @param{int}month - Enter month(1-12)
+	 * @param{int}date - Enter a date(1-31)
+	 * @return(int} day - Day of the week that date falls on
+	 * (0 for Sunday, 1 for Monday, 2 for Tuesday, and so forth)
+	 */
+	public static  String printDay(int year,int month,int date) {
 	
 		int day = utilclass.Day(year, month, date);
 		
@@ -36,7 +49,7 @@ public class DaysOfWeek {
 			 d = Integer.parseInt(args[2]);
 		}
 		
-		System.out.println(PrintDay(y,m,d));
+		System.out.println(printDay(y,m,d));
 		
 		}
 	}
