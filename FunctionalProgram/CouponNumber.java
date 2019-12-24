@@ -1,35 +1,32 @@
 package com.bridgelabs.FunctionalProgram;
-
-
-import java.util.HashSet;
-import java.util.Set;
-
 public class CouponNumber {
 	
-
-	public static int GenerateRandom(int N)
-	{
-		return (int)(Math.random()*N);
+	
+	public static int generateCoupon(int N){
+		int count = 0;
+		int distinct = 0;
+		boolean[] iscollected = new boolean[N];
+		
+		while(distinct < N)
+		{
+			int value = (int)(Math.random()*N);
+			count++;
+			if(!iscollected[value])
+			{
+				distinct++;
+				System.out.println(distinct);
+				iscollected[value] = true;
+			}
 		}
+		return count;
+	}
 	
 	public static void main(String[] args)
 	{
 		System.out.println("Enter number of Coupon to be generated");
 		int N = utilclass.InputInteger();
-		
-		
-		
-		Set<Integer> s = new HashSet<Integer>();
-		
-		
-		for(int i = 0; i<N; i++)
-		{
-			
-			s.add(GenerateRandom(N));
-		}
-		
-		System.out.println(s);
-		System.out.println("Random Numbers generated are = "+s.size());
+		System.out.println("The random numbers required to generate unique coupons are "+generateCoupon(N));
+	
 	}				
 	
 
