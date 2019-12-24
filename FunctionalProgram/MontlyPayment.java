@@ -10,11 +10,11 @@
 package com.bridgelabs.FunctionalProgram;
 public class MontlyPayment {
     /**
-     * To find montly payment
+     * To find monthly payment
      * @param{String}args[0] - Principle in integer
      * @param{String}args[1] - Number of year in integer
      * @param{String}args[2] - Rate in integer
-     * prints montly payment for above parameters.
+     * prints monthly payment for above parameters.
      */
 	public static void main(String[] args) {
 		int Principle = 0;
