@@ -14,7 +14,7 @@ public class DaysOfWeek {
 	 * @param{int}year - Enter year
 	 * @param{int}month - Enter month(1-12)
 	 * @param{int}date - Enter a date(1-31)
-	 * @return(int} day - Day of the week that date falls on
+	 * @return{int} day - Day of the week that date falls on
 	 * (0 for Sunday, 1 for Monday, 2 for Tuesday, and so forth)
 	 */
 	public static  String printDay(int year,int month,int date) {
