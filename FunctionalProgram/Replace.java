@@ -1,9 +1,20 @@
+/********************
+ * Basic Core Programs
+ * purpose : User Input and Replace String Template 
+ *           “Hello <<UserName>>, How are you?”
+ *@discription
+ *@file Relace.java
+ *@author soundarya<ksoundarya4>
+ *@version 1.0
+ *@since 09/12/2019           
+ */
 package com.bridgelabs.FunctionalProgram;
-
 public class Replace {
-	
-	public static void toReplace(String name)
-	{
+	/**
+	 * to replace <<UserName>> with Username
+	 * @param{String}name - input User name 
+	 */
+	public static void toReplace(String name){
 		String  s1 = "Hello <<UserName>> ,How are you ?";
 		
 		StringBuffer sb = new StringBuffer(s1);
