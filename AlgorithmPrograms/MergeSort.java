@@ -1,3 +1,10 @@
+/**********************
+ * Algorithm Program
+ * purpose : a program to do Merge Sort of Integer.
+ * @discription
+ * @file MergeSort.java
+ * @author soundarya<ksoundarya4> 
+ */
 package com.bridgelabs.AlgorithmPrograms;
 
 public class MergeSort {
