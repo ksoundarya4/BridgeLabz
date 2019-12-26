@@ -11,27 +11,26 @@
 package com.bridgelabs.FunctionalProgram;
 
 public class PowerOf2 {
-	
+
 	/**
 	 * To print power of 2 until 2 to the power of N
+	 * 
 	 * @param {int}N - print until 2^N
 	 */
-    public static void printPowerOf2(int N) {
-		
-    	int[] power = new int[N];
+	public static void printPowerOf2(int N) {
+
+		int[] power = new int[N];
 		power[0] = 1;
-		for(int i = 1; i<N; i++)
-		{
-			 power[i] = 2*power[i-1];
-			 System.out.println("2 Power of "+i+ "=" +power[i]);
-			 
-		//	 System.out.println(Math.pow((double)2,(double)i));
+		for (int i = 1; i < N; i++) {
+			power[i] = 2 * power[i - 1];
+			System.out.println("2 Power of " + i + "=" + power[i]);
+
+			// System.out.println(Math.pow((double)2,(double)i));
 		}
-		
+
 	}
 
-	public static void main(String[] args)
-	{
-		printPowerOf2(Integer.parseInt(args[0])); //Takes command line argument N
+	public static void main(String[] args) {
+		printPowerOf2(Integer.parseInt(args[0])); // Takes command line argument N
 	}
 }

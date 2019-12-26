@@ -1,26 +1,23 @@
 package com.bridgelabs.FunctionalProgram;
 
-public class TestGame 
-{
-	public static void main(String[] args)
-	{
-		
+public class TestGame {
+	public static void main(String[] args) {
+
 		String Player = "1";
 		TicTacToe game = new TicTacToe();
 		game.InitializeBoard();
 		game.printBoardStatus();
 
 		do {
-			
-			if(Player.equals("1"))
+
+			if (Player.equals("1"))
 				game.player1();
 			else
-	        	game.player2();
-			
-            if (game.isGameOver())
-            {
+				game.player2();
+
+			if (game.isGameOver()) {
 				game.printBoardStatus();
-				System.out.println("  Palyer "+Player+ " Wins");
+				System.out.println("  Palyer " + Player + " Wins");
 				break;
 			}
 

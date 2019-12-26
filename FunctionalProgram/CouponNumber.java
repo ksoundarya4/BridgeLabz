@@ -9,24 +9,24 @@
  *@since 24/12/2019
  */
 package com.bridgelabs.FunctionalProgram;
+
 public class CouponNumber {
 
 	/**
 	 * To generate distinct coupons
+	 * 
 	 * @param{int}N - N distinct coupon numbers
 	 * @return{int} count - random number required
 	 */
-	 public static int generateCoupon(int N){
+	public static int generateCoupon(int N) {
 		int count = 0;
 		int distinct = 0;
 		boolean[] iscollected = new boolean[N];
-		
-		while(distinct < N)
-		{
-			int value = (int)(Math.random()*N);
+
+		while (distinct < N) {
+			int value = (int) (Math.random() * N);
 			count++;
-			if(!iscollected[value])
-			{
+			if (!iscollected[value]) {
 				distinct++;
 				System.out.println(distinct);
 				iscollected[value] = true;
@@ -34,15 +34,13 @@ public class CouponNumber {
 		}
 		return count;
 	}
-	
-	public static void main(String[] args)
-	{
+
+	public static void main(String[] args) {
+
 		System.out.println("Enter number of Coupon to be generated");
 		int N = utilclass.InputInteger();
-		System.out.println("The random numbers required to generate unique coupons are "+generateCoupon(N));
-	
-	}				
-	
+		System.out.println("The random numbers required to generate unique coupons are " + generateCoupon(N));
 
+	}
 
 }
