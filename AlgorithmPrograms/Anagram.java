@@ -1,9 +1,6 @@
+
 package com.bridgelabs.AlgorithmPrograms;
-
 import java.util.Arrays;
-
-import com.bridgelabs.util.utilclass;
-
 public class Anagram {
 	
 	public static boolean isAnagram(String s1, String s2)
@@ -27,15 +24,15 @@ public class Anagram {
 		return true;
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
+		
 		System.out.println("Enter  two string to check for anagram");
 		String s1 = utilclass.InputString();
 		String s2 = utilclass.InputString();
 		
 		if(isAnagram(s1,s2))
 			System.out.println("Strings are anagram");
-		else
+		if(!isAnagram(s1,s2))
 			System.out.println("String are not anagram");
 	}
 }

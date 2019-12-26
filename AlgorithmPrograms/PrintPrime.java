@@ -1,12 +1,7 @@
 package com.bridgelabs.AlgorithmPrograms;
-
-
-import com.bridgelabs.util.utilclass;
-
 public class PrintPrime {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 //	List<String> l = new ArrayList<String>();
 //	String[] str = null;
 	for(int i = 0; i<=1000; i++)
@@ -21,9 +16,6 @@ public class PrintPrime {
 	
 		
 		}
-		
-	
-		
 	}
 
 }

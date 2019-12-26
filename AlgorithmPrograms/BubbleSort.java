@@ -1,7 +1,5 @@
+
 package com.bridgelabs.AlgorithmPrograms;
-
-import com.bridgelabs.util.utilclass;
-
 public class BubbleSort {
 	
 	public static int[] Bubblesort(int[] arr )
@@ -22,8 +20,7 @@ public class BubbleSort {
 	return arr;
 	}
 	
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		System.out.println("Enter  10 integer numbers to sort");
 	int[] a = new int[10];
 	//Accept integer input

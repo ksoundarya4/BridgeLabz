@@ -1,7 +1,4 @@
 package com.bridgelabs.AlgorithmPrograms;
-
-import com.bridgelabs.util.utilclass;
-
 public class Question
 {
  public static int search(int l ,int h)
