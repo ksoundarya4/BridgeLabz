@@ -12,7 +12,7 @@ public class InserstionSort {
 	/**
 	 * To sort an Integer Array using Insertion sort.
 	 * 
-	 * @param arr - input integer Array. 
+	 * @param arr - input integer Array.
 	 */
 	public static void insertionSortInteger(int[] arr) {
 		for (int i = 1; i < arr.length; i++) {
@@ -29,6 +29,7 @@ public class InserstionSort {
 
 	/**
 	 * To Convert a String to String Array and sort it
+	 * 
 	 * @param s - Sentence input
 	 */
 	public static void insertionSortStrings(String s) {
