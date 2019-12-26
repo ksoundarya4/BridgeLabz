@@ -1,54 +1,57 @@
+/*****************
+ * Algorithm Programs
+ * purpose :  Reads in strings and prints them in sorted order using insertion sort.
+ * @discription
+ * @file InserstionSort.java
+ * @author soundarya<ksoundarya4>
+ */
 package com.bridgelabs.AlgorithmPrograms;
-
-import java.util.Scanner;
 
 public class InserstionSort {
 
-public static  void InsertionSortInteger(int[] arr) 
-{
-	for(int i = 1; i<arr.length; i++)
-	{
-		int j = i-1;
-		int key = arr[i];
-		while(j>=0 && arr[j]> key)
-		{
-			arr[j+1]= arr[j];
-			j = j-1;
+	/**
+	 * To sort an Integer Array using Insertion sort.
+	 * 
+	 * @param arr - input integer Array. 
+	 */
+	public static void insertionSortInteger(int[] arr) {
+		for (int i = 1; i < arr.length; i++) {
+			int j = i - 1;
+			int key = arr[i];
+			while (j >= 0 && arr[j] > key) {
+				arr[j + 1] = arr[j];
+				j = j - 1;
+			}
+			arr[j + 1] = key;
 		}
-		arr[j+1] = key;
-		}
-	for(int i = 0; i<arr.length; i++)
-		System.out.println(arr[i]);
+		utilclass.printArray(arr);
 	}
-	
-public static  void InsertionSortStrings(String s) 
-{
-	String[] arr = s.split(" ");
-	for(int i = 1; i<arr.length; i++)
-	{
-		int j = i-1;
-		String key = arr[i];
-		while(j>=0 && arr[j].compareTo(key) > 0)
-		{
-			arr[j+1]= arr[j];
-			j = j-1;
+
+	/**
+	 * To Convert a String to String Array and sort it
+	 * @param s - Sentence input
+	 */
+	public static void insertionSortStrings(String s) {
+
+		String[] arr = s.split(" ");
+
+		for (int i = 1; i < arr.length; i++) {
+			int j = i - 1;
+			String key = arr[i];
+			while (j >= 0 && arr[j].compareTo(key) > 0) {
+				arr[j + 1] = arr[j];
+				j = j - 1;
+			}
+			arr[j + 1] = key;
 		}
-		arr[j+1] = key;
-		}
-	for(int i = 0; i<arr.length; i++)
-		System.out.println(arr[i]);
+		GenericClass.printArray(arr);
 	}
-	
-	public static void main(String[] args)
-	{
-		
-		Scanner sc1 = new Scanner(System.in);
+
+	public static void main(String[] args) {
+
 		System.out.println("Enter a sentence to sort");
-		String s = sc1.nextLine();
-		sc1.close();
-		InsertionSortStrings(s);
+		String s = utilclass.InputString();
+		insertionSortStrings(s);
 	}
-	
+
 }
-
-
