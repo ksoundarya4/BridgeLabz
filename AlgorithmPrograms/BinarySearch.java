@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class BinarySearch {
 
-	
 	public static void main(String[] args) {
 
 		System.out.println("Enter the file path");
