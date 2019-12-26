@@ -9,7 +9,7 @@ public class BinarySearch {
 		System.out.println("Enter the file path");
 		String path = utilclass.InputString();
 
-		// To read lis of words present in file
+		// To read list of words present in file
 		String[] listOfWords = utilclass.readFile(path);
 		int l = 0;
 		int r = listOfWords.length - 1;
