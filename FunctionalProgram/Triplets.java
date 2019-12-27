@@ -1,8 +1,7 @@
 
 /****************************
  * Functional Programs
- * purpose : sum of three integers adds to zero
- * @description
+ * @purpose : sum of three integers adds to zero
  * @file AddsToZero.java
  * @author soundarya<ksoundarya4>
  * @version 1.0
