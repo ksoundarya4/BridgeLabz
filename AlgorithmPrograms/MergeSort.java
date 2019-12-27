@@ -12,78 +12,55 @@ public class MergeSort {
 	/**
 	 * To merge An Array
 	 * 
-	 * @param arr- Input Array to sort
-	 * @param l    - stating index of an array
-	 * @param m    - middle index of an array
-	 * @param r    - last index of an array
+	 * @param arr      - Input Array to sort
+	 * @param left     - stating index of an array
+	 * @param leftEnd  , rightStart - middle index of an array
+	 * @param rightEnd - last index of an array
 	 */
-	public static void merge(int arr[], int l, int m, int r) {
-		// Find sizes of two subarrays to be merged
-		int n1 = m - l + 1;
-		int n2 = r - m;
+	public static void merge(int arr[], int leftStart, int leftEnd, int rightStart, int rightEnd) {
 
-		/* Create temp arrays */
-		int L[] = new int[n1];
-		int R[] = new int[n2];
+		int[] temp = new int[arr.length];
+		int i = leftStart;
+		int j = rightStart;
+		int k = 0;
 
-		/* Copy data to temp arrays */
-		for (int i = 0; i < n1; ++i)
-			L[i] = arr[l + i];
-		for (int j = 0; j < n2; ++j)
-			R[j] = arr[m + 1 + j];
-
-		/* Merge the temp arrays */
-
-		// Initial indexes of first and second subarrays
-		int i = 0, j = 0;
-
-		// Initial index of merged subarry array
-		int k = l;
-		while (i < n1 && j < n2) {
-			if (L[i] <= R[j]) {
-				arr[k] = L[i];
-				i++;
-			} else {
-				arr[k] = R[j];
-				j++;
-			}
-			k++;
+		while (i <= leftEnd && j <= rightEnd) {
+			if (arr[i] <= arr[j])
+				temp[k++] = arr[i++];
+			if (arr[i] >= arr[j])
+				temp[k++] = arr[j++];
 		}
 
-		/* Copy remaining elements of L[] if any */
-		while (i < n1) {
-			arr[k] = L[i];
-			i++;
-			k++;
-		}
+		while (i <= leftEnd)
+			temp[k++] = arr[i++];
 
-		/* Copy remaining elements of R[] if any */
-		while (j < n2) {
-			arr[k] = R[j];
-			j++;
-			k++;
-		}
+		while (j <= rightEnd)
+			temp[k++] = arr[j++];
+		
+
+		for (i = leftStart, k = 0; i <= rightEnd; i++, k++)
+			arr[i] = temp[k];
+
+
 	}
 
 	/**
 	 * Main function that sorts arr[l..r] using
 	 * 
-	 * @param arr - Input Array
-	 * @param l   - Starting index of an array
-	 * @param r   - Ending index of an array
+	 * @param arr   - Input Array
+	 * @param left  - Starting index of an array
+	 * @param right - Ending index of an array
 	 */
-	public static void sort(int arr[], int l, int r) {
-		if (l < r) {
-			// Find the middle point
-			int m = (l + r) / 2;
+	public static void mergeSort(int arr[], int left, int right) {
 
-			// Sort first and second halves
-			sort(arr, l, m);
-			sort(arr, m + 1, r);
+		if (left < right) {
+			int middle = (left + right) / 2;
 
-			// Merge the sorted halves
-			merge(arr, l, m, r);
+			mergeSort(arr, left, middle);
+			mergeSort(arr, middle + 1, right);
+			merge(arr, left, middle, middle + 1, right);
 		}
+
 	}
 
 	public static void main(String args[]) {
@@ -92,7 +69,7 @@ public class MergeSort {
 		System.out.println("Given Array");
 		utilclass.printArray(arr);
 
-		sort(arr, 0, arr.length - 1);
+		mergeSort(arr, 0, arr.length - 1);
 
 		System.out.println("\nSorted array");
 		utilclass.printArray(arr);
