@@ -12,6 +12,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -376,6 +377,31 @@ public class utilclass {
 				r = m - 1;
 		}
 		return -1;
+	}
+
+	/**
+	 * To check if two String are Anagram
+	 * 
+	 * @param s1 - Input String one
+	 * @param s2 - Input String two
+	 * @return true if two strings are anagram
+	 */
+	public static boolean isAnagram(String s1, String s2) {
+		char[] ch1 = s1.toCharArray();
+		char[] ch2 = s2.toCharArray();
+		if (s1.length() != s2.length())
+			return false;
+		else {
+			Arrays.sort(ch1);
+
+			Arrays.sort(ch2);
+
+			for (int i = 0; i < s1.length(); i++) {
+				if (ch1[i] != ch2[i])
+					return false;
+			}
+		}
+		return true;
 	}
 
 }
