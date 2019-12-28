@@ -1,7 +1,6 @@
 /*****************
  * JUNIT program
- * purpose : prints the day of the week that date falls on
- * @discription
+ * @purpose  prints the day of the week that date falls on
  * @file DaysOfWeek.java
  * @author soundarya<ksoundarya4>
  * @version 1.0
