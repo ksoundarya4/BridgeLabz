@@ -1,9 +1,8 @@
 /*****************
  * Logical Programs
- * purpose :  Simulates a gambler who start with $stake
+ * @purpose  Simulates a gambler who start with $stake
  *            and place fair $1 bets until he/she 
  *            goes broke (i.e. has no money) or reach $goal.
- * @discription
  * @file Gambler.java
  * @author soundarya<ksoundarya4>
  * @version 1.0
