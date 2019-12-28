@@ -1,7 +1,7 @@
 /******************
  * Basic Core Programs
- * purpose : Compute the prime factorization of N
- * @discription
+ * 
+ * @purpose Compute the prime factorization of Nunber
  * @file PrimeFactors.java
  * @author soundarya<ksoundarya4>
  * @version 1.0
@@ -16,7 +16,7 @@ public class PrimeFactors {
 	 * 
 	 * @param{ini}N - Integer to be factorized Prints prime factors of N
 	 */
-	public static void primeFactors(int N) {
+	public static void primeFactorsOf(int N) {
 
 		for (int i = 2; i * i <= N; i++) {
 			while (N % i == 0) {
@@ -32,7 +32,7 @@ public class PrimeFactors {
 	public static void main(String[] args) {
 		System.out.println("Number to find prime factors");
 		int N = utilclass.InputInteger();
-		primeFactors(N);
+		primeFactorsOf(N);
 	}
 
 }
