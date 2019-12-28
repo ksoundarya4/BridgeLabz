@@ -1,7 +1,6 @@
 /**************************
  * Functional Program
- * purpose : Prints Euclidean distance from point (x,y) to origin (0,0)
- * @discription
+ * @purpose  Prints Euclidean distance from point (x,y) to origin (0,0)
  * @file Distance.java
  * @author soundarya<ksoundarya4>
  * @version 1.0
@@ -15,13 +14,13 @@ public class Distance {
 	/**
 	 * To print Euclidean distance
 	 * 
-	 * @param{String}args - Accept command-line arguments print the euclidean
+	 * @param{String}args - Accept command-line arguments print the Euclidean
 	 *                    distance
 	 */
 	public static void main(String[] args) {
 		int x = 0;
 		int y = 0;
-		// convert Strig to integer
+		// convert String to integer
 		if (args.length > 0) {
 			x = Integer.parseInt(args[0]);
 			y = Integer.parseInt(args[1]);
