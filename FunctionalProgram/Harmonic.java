@@ -12,11 +12,11 @@ package com.bridgelabs.FunctionalProgram;
 public class Harmonic {
 
 	/**
-	 * Prints Nth Harmonic number
+	 * Prints Nth Harmonics number
 	 * 
 	 * @param{int}N - if N!=0 then compute harmonics print 1/1 + 1/2 +..+ 1/N
 	 */
-	public static void printHarmonics(int N) {
+	public static void printHarmonicsOf(int N) {
 
 		if (N != 0) {
 			double harmonic = 0;
@@ -37,6 +37,6 @@ public class Harmonic {
 	public static void main(String[] args) {
 		System.out.println("Enter an integer to check harmonics");
 		int num = utilclass.InputInteger();
-		printHarmonics(num);
+		printHarmonicsOf(num);
 	}
 }
