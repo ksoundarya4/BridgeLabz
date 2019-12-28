@@ -1,7 +1,7 @@
 /*****************
  * JUNIT Program
- * purpose : to calculate the monthly payments
- * @discription
+ * 
+ * @purpose : to calculate the monthly payments
  * @file MontlyPayment.java
  * @author soundarya<ksoundarya4>
  * @version 1.0
