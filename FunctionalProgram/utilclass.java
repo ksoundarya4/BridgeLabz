@@ -1,8 +1,8 @@
 /********************
  * UtilClass
- * purpose : To code repetating methods
- * @discription
- * @file utilclass.java
+ * 
+ * @purpose  To code repeating methods
+ * @file UtilClass.java
  * @author soundarya<ksoundarya4>
  */
 
@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class utilclass {
+public class UtilClass {
 
 	/**
 	 * To accept String input from Keyboard
@@ -23,6 +23,15 @@ public class utilclass {
 	 * @return{String} inputed String
 	 */
 	public static String InputString() {
+		return inputString();
+	}
+
+	/**
+	 * To accept String input from Keyboard
+	 * 
+	 * @return{String} inputed String
+	 */
+	public static String inputString() {
 		Scanner sc1 = new Scanner(System.in);
 		String str = sc1.nextLine();
 		return str;
@@ -35,6 +44,15 @@ public class utilclass {
 	 * @return{int} inputed number
 	 */
 	public static int InputInteger() {
+		return inputInteger();
+	}
+
+	/**
+	 * To accept integer input from Keyboard
+	 * 
+	 * @return{int} inputed number
+	 */
+	public static int inputInteger() {
 
 		Scanner sc1 = new Scanner(System.in);
 		int i = sc1.nextInt();
@@ -47,6 +65,15 @@ public class utilclass {
 	 * @return{double} inputed Number
 	 */
 	public static double InputDouble() {
+		return inputDouble();
+	}
+
+	/**
+	 * To accept Number input from Keyboard
+	 * 
+	 * @return{double} inputed Number
+	 */
+	public static double inputDouble() {
 		Scanner sc1 = new Scanner(System.in);
 		double d = sc1.nextDouble();
 		return d;
@@ -58,6 +85,15 @@ public class utilclass {
 	 * @return{boolean} inputed true/false
 	 */
 	public static boolean InputBoolean() {
+		return inputBoolean();
+	}
+
+	/**
+	 * To accept Boolean input from Keyboard
+	 * 
+	 * @return{boolean} inputed true/false
+	 */
+	public static boolean inputBoolean() {
 		Scanner sc1 = new Scanner(System.in);
 		boolean b = sc1.nextBoolean();
 		return b;
@@ -70,6 +106,16 @@ public class utilclass {
 	 * @return{int} count of digits in a number
 	 */
 	public static int NumberOfDigits(int num) {
+		return numberOfDigitsOf(num);
+	}
+
+	/**
+	 * To calculate number of digits in a Number
+	 * 
+	 * @param{int}num - input number to find number of digits
+	 * @return{int} count of digits in a number
+	 */
+	public static int numberOfDigitsOf(int num) {
 		int count = 0;
 		while (num > 0) {
 			num = num / 10;
@@ -110,6 +156,18 @@ public class utilclass {
 	 * @return{int} 0 for Sunday, 1 for Monday, 2 for Tuesday, and so forth.
 	 */
 	public static int Day(int year, int month, int date) {
+		return dayOf(year, month, date);
+	}
+
+	/**
+	 * To find the day of the week that date falls on.
+	 * 
+	 * @param{int}year -Input year
+	 * @param{int}month -Input month
+	 * @param{int}date - Input date
+	 * @return{int} 0 for Sunday, 1 for Monday, 2 for Tuesday, and so forth.
+	 */
+	public static int dayOf(int year, int month, int date) {
 		year = year - (14 - month) / 12;
 		int x = year + (year / 4) - (year / 100) + (year / 400);
 		month = month + 12 * ((14 - month) / 12) - 2;
@@ -126,6 +184,17 @@ public class utilclass {
 	 *               Prints the converted temperature
 	 */
 	public static void TempConversion(float temp, int ch) {
+		temperatureConversionOf(temp, ch);
+	}
+
+	/**
+	 * To convert Temperature from Celsius to Fahrenheit and visaversa
+	 * 
+	 * @param{float}temp - Input temperature
+	 * @param{int}ch - 1 for celcius to fahrenheit ch -2 for fahrenheit to celcius
+	 *               Prints the converted temperature
+	 */
+	public static void temperatureConversionOf(float temp, int ch) {
 		switch (ch) {
 		case 1:
 			temp = (temp * 9 / 5) + 32;
@@ -148,7 +217,7 @@ public class utilclass {
 	 * @param R - Rate in integer
 	 * @return{double} Monthly Payment
 	 */
-	public static double MontlyPayment(int P, int Y, int R) {
+	public static double montlyPaymentOf(int P, int Y, int R) {
 
 		int n = 12 * Y;
 		double r = 1.0 * R / (12 * 100);
@@ -164,7 +233,7 @@ public class utilclass {
 	 * @param{int}num - Input number to find its square root
 	 * @return{double} square root value of the number
 	 */
-	public static double sqrt(int num) {
+	public static double squareRootOf(int num) {
 
 		double t = num;
 		double epsilon = 1e-15;
@@ -192,14 +261,14 @@ public class utilclass {
 			i++;
 		}
 
-		return utilclass.swap(arr);
+		return UtilClass.swapIntegerArray(arr);
 	}
 
 	/**
 	 * Swapping elements in an array @param{int[]}arr - Integer array to swap
 	 * elements @return{int[]} swapped array
 	 */
-	public static int[] swap(int[] arr) {
+	public static int[] swapIntegerArray(int[] arr) {
 		for (int j = 0; j < (arr.length - 1) / 2; j++) {
 
 			arr[j] = arr[j] ^ arr[arr.length - 1 - j];
@@ -272,12 +341,12 @@ public class utilclass {
 	 */
 	public static int[] readIntegerArray() {
 		System.out.println("Enter number of intergers to be read");
-		int N = utilclass.InputInteger();
+		int N = UtilClass.inputInteger();
 		int[] arr = new int[N];
 
 		for (int i = 0; i < N; i++) {
 			System.out.println("Enter " + (i + 1) + "th integer");
-			arr[i] = utilclass.InputInteger();
+			arr[i] = UtilClass.inputInteger();
 		}
 
 		return arr;
@@ -286,7 +355,7 @@ public class utilclass {
 	/**
 	 * To print integer Array
 	 */
-	public static void printArray(int[] arr) {
+	public static void printIntegerArray(int[] arr) {
 		for (int i = 0; i < arr.length; i++)
 			System.out.println(arr[i]);
 	}
