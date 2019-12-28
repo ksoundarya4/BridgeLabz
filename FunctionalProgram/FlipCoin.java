@@ -1,6 +1,6 @@
 /*********************
  * Basic Core Program
- * purpose : Flip Coin and Print percentage of Heads and tails
+ * @purpose  Flip Coin and Print percentage of Heads and tails
  * @file FlipCoin.java
  * @author soundarya<ksoundarya4>
  * @version 1.0
@@ -14,7 +14,7 @@ public class FlipCoin {
 	 * To flip a coin
 	 * 
 	 * @param N : Number of times to flip a coin (datatype:Integer)
-	 * @return percentage of Head vs Tails
+	 * @return percentage of Head v/s Tails
 	 */
 	public static double toFlipCoin(int N) {
 		int T = 0;
