@@ -28,7 +28,7 @@ public class Replace {
 	public static void main(String[] args) {
 
 		System.out.println("Enter your name");
-		String name = utilclass.InputString();
+		String name = UtilClass.inputString();
 
 		toReplace(name);
 	}

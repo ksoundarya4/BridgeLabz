@@ -197,7 +197,7 @@ public class TicTacToe {
 	 */
 	public int getColmCoordinates() {
 		System.out.println("Enter coordinates for colms :");
-		int col = utilclass.InputInteger();
+		int col = UtilClass.inputInteger();
 		return col;
 	}
 
@@ -209,7 +209,7 @@ public class TicTacToe {
 	public int getRowsCoordinates() {
 
 		System.out.println("Enter coordinates for rows :");
-		int row = utilclass.InputInteger();
+		int row = UtilClass.inputInteger();
 		return row;
 	}
 }

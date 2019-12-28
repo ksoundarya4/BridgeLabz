@@ -20,7 +20,7 @@ public class DaysOfWeek {
 	 */
 	public static String printDay(int year, int month, int date) {
 
-		int day = utilclass.Day(year, month, date);
+		int day = UtilClass.dayOf(year, month, date);
 
 		switch (day) {
 		case 0:

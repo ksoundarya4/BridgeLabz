@@ -37,7 +37,7 @@ public class CouponNumber {
 	public static void main(String[] args) {
 
 		System.out.println("Enter number of Coupon to be generated");
-		int N = utilclass.InputInteger();
+		int N = UtilClass.inputInteger();
 		System.out.println("The random numbers required to generate unique coupons are " + generateCouponOf(N));
 
 	}

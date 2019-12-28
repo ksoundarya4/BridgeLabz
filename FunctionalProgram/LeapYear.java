@@ -18,7 +18,7 @@ public class LeapYear {
 	 * @return {boolean} true if Year is Leapyear else false
 	 */
 	public static boolean isLeapYear(int year) {
-		if (utilclass.NumberOfDigits(year) == 4) {
+		if (UtilClass.numberOfDigitsOf(year) == 4) {
 			if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))
 				return true;
 		}
@@ -28,7 +28,7 @@ public class LeapYear {
 	public static void main(String[] args) {
 
 		System.out.println("Enter year to find LeapYear");
-		int y = utilclass.InputInteger();
+		int y = UtilClass.inputInteger();
 		System.out.println(isLeapYear(y));
 
 	}

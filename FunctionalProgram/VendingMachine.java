@@ -52,7 +52,7 @@ public class VendingMachine {
 
 	public static void main(String[] args) {
 		System.out.println("Enter the Amount to be received by VendingMachine");
-		int Money = utilclass.InputInteger();
+		int Money = UtilClass.inputInteger();
 
 		VendingMachine.calculate(Money, notes);
 		System.out.println("Total number of notes returned = " + TotalNotes);

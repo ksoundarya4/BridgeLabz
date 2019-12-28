@@ -33,7 +33,7 @@ public class FlipCoin {
 
 	public static void main(String[] args) {
 		System.out.println("Enter number of times to Flip a Coin");
-		int N = utilclass.InputInteger();
+		int N = UtilClass.inputInteger();
 		System.out.println(FlipCoin.toFlipCoin(N));
 	}
 

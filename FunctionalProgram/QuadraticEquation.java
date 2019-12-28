@@ -17,9 +17,9 @@ public class QuadraticEquation {
 	 */
 	public static void main(String[] args) {
 		System.out.println("Enter three inter values to find quadratic roots");
-		int a = utilclass.InputInteger();
-		int b = utilclass.InputInteger();
-		int c = utilclass.InputInteger();
+		int a = UtilClass.inputInteger();
+		int b = UtilClass.inputInteger();
+		int c = UtilClass.inputInteger();
 
 		double delta = (b * b) - (4 * a * c);
 		double root1 = (-b + Math.sqrt(delta)) / (2 * a);

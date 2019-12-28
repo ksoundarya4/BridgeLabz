@@ -1,9 +1,8 @@
 /*****************
  * JUNIT Program
- * purpose : To convert a decimal to binary digit, 
+ * @purpose  To convert a decimal to binary digit, 
  *           To swap nibbles and find new number
  *           Find new number is a power of 2
- * @discription
  * @file Binary.java
  * @author soundarya<ksoundarya4>
  * @version 1.0
@@ -15,12 +14,10 @@ public class Binary {
 
 	public static void main(String[] args) {
 		System.out.println("Enter a number to be converted");
-		int num = utilclass.InputInteger();
+		int num = UtilClass.inputInteger();
 
-		int[] binary = utilclass.toBinary(num);
-		for (int i = 0; i < binary.length; i++) {
-			System.out.print(binary[i]);
-		}
+		int[] binary = UtilClass.toBinary(num);
+		UtilClass.printIntegerArray(binary);
 
 		int swapNibble = swapNibbleOf(num);
 		System.out.println();

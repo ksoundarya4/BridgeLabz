@@ -31,7 +31,7 @@ public class PrimeFactors {
 
 	public static void main(String[] args) {
 		System.out.println("Number to find prime factors");
-		int N = utilclass.InputInteger();
+		int N = UtilClass.inputInteger();
 		primeFactorsOf(N);
 	}
 

@@ -14,9 +14,9 @@ public class SquareRootByNewtonMethod {
 
 	public static void main(String[] args) {
 		System.out.println("Enter the number to find  square root");
-		int num = utilclass.InputInteger();
+		int num = UtilClass.inputInteger();
 
-		System.out.println("Square root of " + num + " = " + utilclass.sqrt(num));
+		System.out.println("Square root of " + num + " = " + UtilClass.squareRootOf(num));
 
 	}
 

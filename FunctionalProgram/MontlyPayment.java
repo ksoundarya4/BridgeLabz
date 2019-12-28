@@ -28,7 +28,7 @@ public class MontlyPayment {
 			Year = Integer.parseInt(args[1]);
 			Rate = Integer.parseInt(args[2]);
 		}
-		System.out.println("The Monthly Payment is = " + utilclass.MontlyPayment(Principle, Year, Rate));
+		System.out.println("The Monthly Payment is = " + UtilClass.montlyPaymentOf(Principle, Year, Rate));
 	}
 
 }

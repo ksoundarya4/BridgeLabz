@@ -38,7 +38,7 @@ public class Triplets {
 
 	public static void main(String[] args) {
 
-		int[] a = utilclass.readIntegerArray();
+		int[] a = UtilClass.readIntegerArray();
 		List<String> l = addToZero(a);
 
 		System.out.println("Number of triplets = " + l.size());

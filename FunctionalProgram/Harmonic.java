@@ -36,7 +36,7 @@ public class Harmonic {
 
 	public static void main(String[] args) {
 		System.out.println("Enter an integer to check harmonics");
-		int num = utilclass.InputInteger();
+		int num = UtilClass.inputInteger();
 		printHarmonicsOf(num);
 	}
 }

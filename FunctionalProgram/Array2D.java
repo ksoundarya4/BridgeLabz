@@ -21,7 +21,7 @@ public class Array2D<T> {
 	public static int getRows() {
 
 		System.out.println("Enter number of rows");
-		int rows = utilclass.InputInteger();
+		int rows = UtilClass.inputInteger();
 		return rows;
 	}
 
@@ -33,7 +33,7 @@ public class Array2D<T> {
 	public static int getColms() {
 
 		System.out.println("Enter number of coloums");
-		int colms = utilclass.InputInteger();
+		int colms = UtilClass.inputInteger();
 		return colms;
 	}
 
@@ -48,7 +48,7 @@ public class Array2D<T> {
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < colms; j++) {
 				System.out.println("Enter " + i + "th row " + j + "th coloum values");
-				arr2D[i][j] = utilclass.InputInteger();
+				arr2D[i][j] = UtilClass.inputInteger();
 			}
 		}
 		return arr2D;
@@ -66,7 +66,7 @@ public class Array2D<T> {
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < colms; j++) {
 				System.out.println("Enter " + i + "th row " + j + "th coloum values");
-				arr2D[i][j] = utilclass.InputDouble();
+				arr2D[i][j] = UtilClass.inputDouble();
 			}
 		}
 		return arr2D;
@@ -84,7 +84,7 @@ public class Array2D<T> {
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < colms; j++) {
 				System.out.println("Enter " + i + "th row " + j + "th coloum values");
-				arr2D[i][j] = utilclass.InputBoolean();
+				arr2D[i][j] = UtilClass.inputBoolean();
 			}
 		}
 		return arr2D;
@@ -176,7 +176,7 @@ public class Array2D<T> {
 	public static void main(String[] args) {
 
 		System.out.println("Enter which array to to use");
-		String s = utilclass.InputString();
+		String s = UtilClass.inputString();
 		int rows = getRows();
 		int colms = getColms();
 		SelectArray(s, rows, colms);
