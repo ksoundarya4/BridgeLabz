@@ -1,8 +1,8 @@
 /********************
  * Basic Core Programs
- * purpose : User Input and Replace String Template 
+ * 
+ * @purpose  User Input and Replace String Template 
  *           “Hello <<UserName>>, How are you?”
- *@discription
  *@file Relace.java
  *@author soundarya<ksoundarya4>
  *@version 1.0
