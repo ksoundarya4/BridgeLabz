@@ -2,7 +2,7 @@
  * Functional Program
  * 
  * @purpose  To find roots of Quadratic equation [a*x*x + b*x + c]
- * @file Quadratic.java
+ * @file QuadraticEquation.java
  * @author soundarya<ksoundarya>
  * @version 1.0
  * @since 10/12/2019
