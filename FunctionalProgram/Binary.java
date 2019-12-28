@@ -22,7 +22,7 @@ public class Binary {
 			System.out.print(binary[i]);
 		}
 
-		int swapNibble = swapNibble(num);
+		int swapNibble = swapNibbleOf(num);
 		System.out.println();
 		System.out.println("Number after swaping nibbles = " + swapNibble);
 
@@ -38,7 +38,7 @@ public class Binary {
 	 * @param{int}num - Input number to swap its nibbles
 	 * @return{int} Resultant number
 	 */
-	public static int swapNibble(int num) {
+	public static int swapNibbleOf(int num) {
 		return ((num & 0x0f) << 4) | ((num & 0xf0) >> 4);
 	}
 
