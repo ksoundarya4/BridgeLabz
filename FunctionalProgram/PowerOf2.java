@@ -1,8 +1,8 @@
 /************
  * Basic Core Programs
- * purpose : Prints table of powers of 2 
- * that are less than or equal to 2 to the power of N
- * @discription
+ * 
+ * @purpose  Prints table of powers of 2 
+ * that are less than or equal to 2 to the power of 2
  * @file PowerOf2
  * @author soundarya<ksoundarya4>
  * @version 1.0
@@ -17,7 +17,7 @@ public class PowerOf2 {
 	 * 
 	 * @param {int}N - print until 2^N
 	 */
-	public static void printPowerOf2(int N) {
+	public static void printPowerOfTwo(int N) {
 
 		int[] power = new int[N];
 		power[0] = 1;
@@ -31,6 +31,6 @@ public class PowerOf2 {
 	}
 
 	public static void main(String[] args) {
-		printPowerOf2(Integer.parseInt(args[0])); // Takes command line argument N
+		printPowerOfTwo(Integer.parseInt(args[0])); // Takes command line argument N
 	}
 }
