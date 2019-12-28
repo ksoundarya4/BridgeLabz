@@ -22,29 +22,11 @@ public class UtilClass {
 	 * 
 	 * @return{String} inputed String
 	 */
-	public static String InputString() {
-		return inputString();
-	}
-
-	/**
-	 * To accept String input from Keyboard
-	 * 
-	 * @return{String} inputed String
-	 */
 	public static String inputString() {
 		Scanner sc1 = new Scanner(System.in);
 		String str = sc1.nextLine();
 		return str;
 
-	}
-
-	/**
-	 * To accept integer input from Keyboard
-	 * 
-	 * @return{int} inputed number
-	 */
-	public static int InputInteger() {
-		return inputInteger();
 	}
 
 	/**
@@ -64,15 +46,6 @@ public class UtilClass {
 	 * 
 	 * @return{double} inputed Number
 	 */
-	public static double InputDouble() {
-		return inputDouble();
-	}
-
-	/**
-	 * To accept Number input from Keyboard
-	 * 
-	 * @return{double} inputed Number
-	 */
 	public static double inputDouble() {
 		Scanner sc1 = new Scanner(System.in);
 		double d = sc1.nextDouble();
@@ -84,29 +57,10 @@ public class UtilClass {
 	 * 
 	 * @return{boolean} inputed true/false
 	 */
-	public static boolean InputBoolean() {
-		return inputBoolean();
-	}
-
-	/**
-	 * To accept Boolean input from Keyboard
-	 * 
-	 * @return{boolean} inputed true/false
-	 */
 	public static boolean inputBoolean() {
 		Scanner sc1 = new Scanner(System.in);
 		boolean b = sc1.nextBoolean();
 		return b;
-	}
-
-	/**
-	 * To calculate number of digits in a Number
-	 * 
-	 * @param{int}num - input number to find number of digits
-	 * @return{int} count of digits in a number
-	 */
-	public static int NumberOfDigits(int num) {
-		return numberOfDigitsOf(num);
 	}
 
 	/**
@@ -155,18 +109,6 @@ public class UtilClass {
 	 * @param{int}date - Input date
 	 * @return{int} 0 for Sunday, 1 for Monday, 2 for Tuesday, and so forth.
 	 */
-	public static int Day(int year, int month, int date) {
-		return dayOf(year, month, date);
-	}
-
-	/**
-	 * To find the day of the week that date falls on.
-	 * 
-	 * @param{int}year -Input year
-	 * @param{int}month -Input month
-	 * @param{int}date - Input date
-	 * @return{int} 0 for Sunday, 1 for Monday, 2 for Tuesday, and so forth.
-	 */
 	public static int dayOf(int year, int month, int date) {
 		year = year - (14 - month) / 12;
 		int x = year + (year / 4) - (year / 100) + (year / 400);
@@ -174,17 +116,6 @@ public class UtilClass {
 
 		return (date + x + (31 * month) / 12) % 7;
 
-	}
-
-	/**
-	 * To convert Temperature from Celsius to Fahrenheit and visaversa
-	 * 
-	 * @param{float}temp - Input temperature
-	 * @param{int}ch - 1 for celcius to fahrenheit ch -2 for fahrenheit to celcius
-	 *               Prints the converted temperature
-	 */
-	public static void TempConversion(float temp, int ch) {
-		temperatureConversionOf(temp, ch);
 	}
 
 	/**
