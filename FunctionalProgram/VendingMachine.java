@@ -1,10 +1,10 @@
 /*********************
  * JUNIT programs
- * purpose : to calculate the minimum number of Notes as
+ * 
+ * @purpose To calculate the minimum number of Notes as
  *           well as the Notes to be returned by the Vending 
  *           Machine as a Change
- *  @discription
- *  @fie VendingMachine.java
+ *  @file VendingMachine.java
  *  @author soundarya<ksoundarya4>
  *  @version 1.0
  *  @since 11/12/2019
@@ -28,7 +28,7 @@ public class VendingMachine {
 	 *                  Integer array of available notes in the machine
 	 * @return{int}number - Number of notes returned from Machine
 	 */
-	public static int calculate(int Money, int[] notes) {
+	public static int calculateNotes(int Money, int[] notes) {
 
 		int reminder = 0;
 		if (Money == 0)
@@ -45,7 +45,7 @@ public class VendingMachine {
 			}
 			i++;
 
-			return calculate(Money, notes);
+			return calculateNotes(Money, notes);
 		}
 		return -1;
 	}
@@ -54,7 +54,7 @@ public class VendingMachine {
 		System.out.println("Enter the Amount to be received by VendingMachine");
 		int Money = UtilClass.inputInteger();
 
-		VendingMachine.calculate(Money, notes);
+		VendingMachine.calculateNotes(Money, notes);
 		System.out.println("Total number of notes returned = " + TotalNotes);
 
 	}
