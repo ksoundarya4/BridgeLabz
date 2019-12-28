@@ -1,7 +1,7 @@
 /**********************
  * Basic Core Program
- * purpose : to find LeapYear
- * @Discription
+ * 
+ * @purpose : to find LeapYear
  * @file LeapYear.java
  * @author soundarya<ksoundarya4>
  * @version 1.0
