@@ -1,12 +1,11 @@
 /**********************
- *Logical Program
- *purpose : To count random numbers generated to 
- *          generate distinct coupons.
- * @discription
+ * Logical Program
+ * @purpose  To count random numbers generated to 
+ * generate distinct coupons.
  * @file CouponNumber.java 
  * @author soundarya<ksoundarya4>
  * @version 1.0
- *@since 24/12/2019
+ * @since 24/12/2019
  */
 package com.bridgelabs.FunctionalProgram;
 
@@ -18,7 +17,7 @@ public class CouponNumber {
 	 * @param{int}N - N distinct coupon numbers
 	 * @return{int} count - random number required
 	 */
-	public static int generateCoupon(int N) {
+	public static int generateCouponOf(int N) {
 		int count = 0;
 		int distinct = 0;
 		boolean[] iscollected = new boolean[N];
@@ -39,7 +38,7 @@ public class CouponNumber {
 
 		System.out.println("Enter number of Coupon to be generated");
 		int N = utilclass.InputInteger();
-		System.out.println("The random numbers required to generate unique coupons are " + generateCoupon(N));
+		System.out.println("The random numbers required to generate unique coupons are " + generateCouponOf(N));
 
 	}
 
