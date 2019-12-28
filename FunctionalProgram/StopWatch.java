@@ -1,8 +1,7 @@
 /******************
  * Logical Programs
- * purpose : Stopwatch Program for measuring the time 
- *           that elapses between the start and end clicks
- * @discription
+ * @purpose  Stop watch Program for measuring the time 
+ *           that elapses between the start and end clicks.
  * @file StopWatch.java
  * @author soundarya<ksoundarya4>
  * @version 1.0
